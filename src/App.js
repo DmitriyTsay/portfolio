@@ -1,17 +1,30 @@
 
 import { Header } from './components/header/Header';
 import { Homepage } from './pages/Homepage/Homepage';
-import { Footer } from './components/footer/Footer';
 
 import './App.scss';
+import { BrowserRouter } from 'react-router-dom';
+
+import { ConfigProvider} from 'antd';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Homepage />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ConfigProvider
+        theme={{
+          token: {
+            colorTextBase: 'white',
+            // colorPrimary: '#00b96b',
+          },
+        }}
+      >
+        <div className="App">
+          <Header />
+          <Homepage />
+          {/* <Footer /> */}
+        </div>
+      </ConfigProvider>
+    </BrowserRouter>
   );
 }
 
