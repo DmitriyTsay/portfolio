@@ -110,9 +110,9 @@ export const Portfolio = ({togglePicturesModal, setNewImageSource}) => {
                 >
                     <ProjectCard 
                         imagesSources={[
-                            './viewproject/1.png',
-                            './viewproject/2.png',
-                            './viewproject/3.png',
+                            '/viewproject/1.png',
+                            '/viewproject/2.png',
+                            '/viewproject/3.png',
                         ]}
                         title='Система управления проектами.'
                         description={projectsMap.viewProject}
@@ -121,9 +121,9 @@ export const Portfolio = ({togglePicturesModal, setNewImageSource}) => {
                     />
                     <ProjectCard 
                         imagesSources={[
-                            './continent/1.png',
-                            './continent/2.png',
-                            './continent/3.png',
+                            '/continent/1.png',
+                            '/continent/2.png',
+                            '/continent/3.png',
                         ]}
                         title='Виртуальный офис.'
                         description={projectsMap.continent}
@@ -132,8 +132,8 @@ export const Portfolio = ({togglePicturesModal, setNewImageSource}) => {
                     />
                     <ProjectCard 
                         imagesSources={[
-                            './discord/1.png',
-                            './discord/2.png',
+                            '/discord/1.png',
+                            '/discord/2.png',
                         ]}
                         title='Тестовое задание (Electron).'
                         description={projectsMap.discord}
@@ -145,8 +145,8 @@ export const Portfolio = ({togglePicturesModal, setNewImageSource}) => {
                     />
                     <ProjectCard 
                         imagesSources={[
-                            './tetris/1.png',
-                            './tetris/2.png',
+                            '/tetris/1.png',
+                            '/tetris/2.png',
                         ]}
                         title='Учебный проект (Тетрис).'
                         description={projectsMap.tetris}
