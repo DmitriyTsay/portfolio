@@ -41,11 +41,11 @@ export const Header = () => {
                         Проекты
                     </Button>
 
-                    <Button 
+                    {/* <Button 
                         className="header__nav__additional"
                     >
                         Контакты
-                    </Button>
+                    </Button> */}
 
                     <Button 
                         className="header__nav__additional icon"
