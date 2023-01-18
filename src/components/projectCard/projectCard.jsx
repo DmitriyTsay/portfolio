@@ -19,7 +19,7 @@ export const ProjectCard = ({imagesSources, title, description, setNewImageSourc
                 {imagesSources?.map((source) => {
                     return (
                         <img src={source} 
-                        alt='Project Image' 
+                        alt='Project' 
                         key={`${source}`}
                         className='project__image'
                         onClick={() => {openPictureModal(source)}}

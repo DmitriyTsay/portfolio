@@ -21,7 +21,7 @@ export const PicturesModal = ({imageSource, showPicturesModal, togglePicturesMod
         }}
         onCancel={() => {togglePicturesModal()}}
         >
-            <img src={imageSource} alt='Modal-Image' style={{width: '100%'}}/>
+            <img src={imageSource} alt='Modal' style={{width: '100%'}}/>
         </Modal>
     )
 }

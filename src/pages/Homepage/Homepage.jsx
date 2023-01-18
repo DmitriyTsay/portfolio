@@ -1,7 +1,8 @@
 
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { PicturesModal } from "../../components/picturesModal/picturesModal";
 import { SkillsModal } from "../../components/skillsModal/SkillsModal";
+import { Contacts } from "./Contacts";
 
 import './Homepage.scss';
 import { Landing } from "./Landing";
@@ -51,6 +52,7 @@ export const Homepage = () => {
                 togglePicturesModal={togglePicturesModal}
                 setNewImageSource={setNewImageSource}
             />
+            <Contacts />
         </div>
     )
 }
