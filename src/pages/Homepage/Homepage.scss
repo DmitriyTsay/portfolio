@@ -13,7 +13,7 @@
 }
 
 .landing {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
 
     display: flex;
@@ -26,7 +26,6 @@
     background: linear-gradient(-45deg, darkgray, rgb(15, 25, 34), #2a4054, #4689c7);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
-    height: 100vh;
     
     @keyframes gradient {
         0% {
@@ -57,7 +56,7 @@
         height: 500px;
 
         background-image: url(../../../public/avatar.jpg);
-        background-position: center;
+        background-size: cover;
         border-radius: 25px;
     }
 }
@@ -66,8 +65,17 @@
 
 .skills {
     background: rgb(15, 25, 34);
+    height: auto;
 
     padding: 50px 300px;
+
+    &__row {
+        background: #2a4054;
+        border-radius: 10px;
+        box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+
+        padding: 30px 0;
+    }
 
     & > p {
         margin-bottom: 50px;
@@ -80,8 +88,8 @@
     }
 
     &__image-wrapper {
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         overflow: hidden;
 
         display: flex;
@@ -93,6 +101,7 @@
         & .others {
             user-select: none;
             cursor: pointer;
+            font-size: 36px;
         }
 
         & img {
@@ -127,6 +136,7 @@
 
 .portfolio {
     background: rgb(15, 25, 34);
+    height: auto;
 
     padding: 50px 300px;
 
@@ -162,31 +172,74 @@
 // FOR TABLETS
 
 @media screen and (max-width: 1400px) {
+
+    .homepage {
+        & h1 {
+            font-family: 'Inter';
+            font-size: 60px;
+            color: white;
+        }
+    
+        & h2 {
+            font-family: 'Inter';
+            font-size: 36px;
+            color: white;
+        }
+    }
+
+    .section-title {
+        margin-left: 70px;
+    }
+
+    .landing {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        flex-direction: column;
+
+        &__image-wrapper {
+            width: 400px;
+            height: 400px;
+        }
+
+        &__title-wrapper {
+            margin-top: 50px;
+        }
+    }
+    
     .skills {
+        display: flex;
+        flex-direction: column;
         padding: 0;
+
+        &__row {
+            width: 80%;
+            align-self: center;
+        }
 
         & > h2 {
             padding-top: 50px;
         }
 
-        & > h2,
-        & > p {
-            margin-left: 50px;
-        }
-
         &__image-wrapper {
-            height: 200px;
-            width: 200px;
+            height: 150px;
+            width: 150px;
             overflow: hidden;
 
             & .others {
-                font-size: 48px;
+                font-size: 30px;
             }
         }
     }
 
     .portfolio {
-        padding: 0;
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+
+        &__carousel-holder {
+            width: 80%;
+            align-self: center;
+        }
     }
 }
 
@@ -197,8 +250,8 @@
 
     .skills {
         &__image-wrapper {
-            height: 300px;
-            width: 300px;
+            height: 150px;
+            width: 150px;
             margin: 0 0 50px 0;
         }
     }

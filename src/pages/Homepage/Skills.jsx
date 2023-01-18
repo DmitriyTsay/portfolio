@@ -6,11 +6,15 @@ import './Homepage.scss';
 export const Skills = ({showSkillsModal, toggleSkillsModal}) => {
     return (
         <div id="skills" className="skills">
-            <h2>Мои навыки</h2>
-            <p style={{
+            <h2 className="section-title">Мои навыки</h2>
+            <p 
+            className="section-title"
+            style={{
                 color: 'gray'
             }}>Кликни, чтобы раскрыть информацию</p>
-            <Row style={{
+            <Row 
+            className="skills__row"
+            style={{
                 display: 'flex',
                 justifyContent: 'center'
             }}>
@@ -49,12 +53,6 @@ export const Skills = ({showSkillsModal, toggleSkillsModal}) => {
                         <img onClick={() => {toggleSkillsModal('javascript')}} alt="Javascript-LOGO" src="/javascript.png"/>
                     </Tooltip>
                 </div>
-            </Row>
-            <Row style={{
-                display: 'flex',
-                justifyContent: 'center',
-                marginTop: '50px'
-            }}>
                 <div className="skills__image-wrapper" >
                     <Tooltip
                         color={'black'}

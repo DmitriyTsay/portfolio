@@ -100,8 +100,8 @@ export const Portfolio = ({togglePicturesModal, setNewImageSource}) => {
 
     return (
         <div id="portfolio" className="portfolio">
-            <h2>Проекты</h2>
-            <div style={{position: 'relative'}}>
+            <h2 className="section-title">Проекты</h2>
+            <div className="portfolio__carousel-holder" style={{position: 'relative'}}>
                 <Carousel 
                 ref={carouselRef}
                 dotPosition="top"
