@@ -13,11 +13,8 @@ export const Skills = ({showSkillsModal, toggleSkillsModal}) => {
                 color: 'gray'
             }}>Кликни, чтобы раскрыть информацию</p>
             <Row 
-            className="skills__row"
-            style={{
-                display: 'flex',
-                justifyContent: 'center'
-            }}>
+                className="skills__row"
+            >
                 <div className="skills__image-wrapper">
                     <Tooltip
                         color={'black'}

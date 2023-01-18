@@ -70,6 +70,9 @@
     padding: 50px 300px;
 
     &__row {
+        display: flex;
+        justify-content: center;
+
         background: #2a4054;
         border-radius: 10px;
         box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
@@ -288,6 +291,10 @@
         display: flex;
         flex-direction: column;
 
+        &__arrow {
+            display: none;
+        }
+
         &__carousel-holder {
             width: 80%;
             align-self: center;
@@ -305,11 +312,17 @@
     
 
     .skills {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+
         &__image-wrapper {
             height: 150px;
             width: 150px;
             margin: 0 0 50px 0;
         }
+
     }
 
     .contacts {

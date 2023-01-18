@@ -28,21 +28,21 @@ export const Header = () => {
                     marginRight: '20px'
                 }}>
                     <Button 
-                        className="header__nav__additional"
+                        className="header__nav__additional anchor"
                         onClick={() => {scrollTo('skills')}}
                     >
                         Навыки
                     </Button>
 
                     <Button 
-                        className="header__nav__additional"
+                        className="header__nav__additional anchor"
                         onClick={() => {scrollTo('portfolio')}}
                     >
                         Проекты
                     </Button>
 
                     <Button 
-                        className="header__nav__additional"
+                        className="header__nav__additional anchor"
                         onClick={() => {scrollTo('contacts')}}
                     >
                         Контакты
